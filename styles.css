@@ -57,6 +57,12 @@ body {
   cursor:pointer;
 }
 
+.Play:focus, button:active {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  outline: none;
+}
+
 #Title{
   font-family: "Libre-Bold", sans-serif;
   font-size: clamp(4vw, 12vw, 7vh);
@@ -178,8 +184,14 @@ body {
   touch-action: manipulation;
 }
 
-.Object:hover{
+.Object:hover {
   cursor: pointer;
+}
+
+.Object:focus, button:active {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  outline: none;
 }
 
 #Enter {
