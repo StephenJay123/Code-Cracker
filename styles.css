@@ -1,0 +1,273 @@
+@font-face {
+  font-family: "Libre-Light";
+  src: url("Fonts/LibreFranklin-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Libre-Bold";
+  src: url("Fonts/LibreFranklin-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: #f1f0eb;
+}
+
+#Logo {
+  display: block;
+  margin: 0 auto;
+  margin-top: 45vw;
+  height: 30vh;
+  width: auto;
+
+  @media (min-width: 1024px) {
+    margin-top: 8vw;
+  }
+}
+
+#Subtext {
+  width: 45vh;
+  font-size: 3vh;
+  margin-top: 3vh;
+  margin: 0 auto;
+  color: black;
+  font-family: "Libre-Light", sans-serif;
+  text-align: center;
+}
+
+.Play {
+  height: 8vh;
+  width: 25vh;
+  display: block;
+  margin: 0 auto;
+  margin-top: 1vh;
+  background-color: black;
+  color: #f1f0eb;
+  font-family: "Libre-Light", sans-serif;
+  font-size: 4vh;
+  border: none;
+  border-radius: 5vh;
+}
+
+.Play:hover {
+  cursor:pointer;
+}
+
+#Title{
+  font-family: "Libre-Bold", sans-serif;
+  font-size: clamp(4vw, 12vw, 7vh);
+  text-align: center;
+  margin-bottom: -0.5vw;
+  margin-top: 1vw;
+}
+
+#Main {
+  height: clamp(5vw, 10vw, 10vh);
+  aspect-ratio: 1 / 1;
+  display: flex;
+  margin: auto;
+  outline: none;
+  border: none;
+  background-color: transparent;
+
+  @media (max-width: 1000px) {
+    margin-bottom: 60vw;
+  }
+}
+
+#Main:hover{
+  cursor: pointer;
+}
+
+#Game {
+  @media (max-width: 1000px) {
+    width: 50%;
+    transform: scale(1.5);
+    margin-left: 24vw;
+  }
+}
+
+.Grid {
+  margin: auto;
+  margin-top: clamp(.75vw, 5vw, 2vh);
+  margin-left: clamp(.25vh, .4vw, 10vh)
+}
+
+.Line {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  margin-bottom: clamp(.1vw, 2vw, .75vh);
+  position: relative;
+}
+
+.Score {
+  font-size: clamp(3vh, 4vw, 7vh);
+  color: black;
+  font-family: "Libre-Bold", sans-serif;
+  line-height: 0;
+  margin-bottom: -1vw;
+  transform: translate(0, clamp(-1.5vh, -1vw, -.5vh));
+}
+
+.Indent {
+  font-size: clamp(3vh, 4vw, 7vh);
+  color: #f1f0eb;
+  font-family: "Libre-Bold", sans-serif;
+  line-height: 0;
+  margin-bottom: -1vw;
+  transform: translate(0, clamp(-1.5vh, -1vw, -.5vh));
+}
+
+.Box {
+  border-radius: 0;
+  height: clamp(5vw, 10vw, 10vh);
+  aspect-ratio: 1 / 1;
+  border: clamp(.25vw, .5vw, .5vh) solid #000000;
+  margin-right: clamp(.25vh, .4vw, 10vh);
+  box-sizing: border-box;
+}
+
+.Image {
+  width: 80%;
+  height: 80%;
+  margin-left: 10%;
+  margin-top: 10%;
+}
+
+.Images {
+  width: 80%;
+  height: 80%;
+}
+
+.Icon {
+  width: 100%;
+  height: 100%;
+}
+
+#Home {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  object-fit: contain;
+}
+
+.Objects {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  margin-top: clamp(3vw, 2vw, .75vh);
+  margin-bottom: clamp(.1vw, 2vw, .75vh);
+  margin-left: clamp(.25vh, .4vw, 10vh);
+  position: relative;
+}
+
+.Object {
+  border-radius: 0;
+  height: clamp(5vw, 10vw, 10vh);
+  aspect-ratio: 1 / 1;
+  border: clamp(.25vw, .5vw, .5vh) solid #000000;
+  margin-right: clamp(.25vh, .4vw, 10vh);
+  box-sizing: border-box;
+  background-color: transparent;
+  outline: none;
+}
+
+.Object:hover{
+  cursor: pointer;
+}
+
+#Enter {
+  background-color: rgb(47, 255, 47);
+}
+
+#EnterImg {
+  width: 80%;
+  height: 80%;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+
+#Backspace {
+  background-color: rgb(255, 47, 47);
+}
+
+#BackspaceImg {
+  width: 80%;
+  height: 80%;
+  margin-right: 0%;
+  margin-bottom: 0%;
+}
+
+.Blur {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  backdrop-filter: blur(5px);
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.Celebration {
+  width: clamp(25vw, 50vw, 50vh);
+  aspect-ratio: 2/1.2;
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background-color: #f1f0eb;
+  border: clamp(.125vw, .125vw, .5vh) solid #000000;
+  margin: auto;
+  margin-top: 15vw;
+  
+  @media (max-width: 1000px) {
+    width: 80vw;
+    border: .25vw solid #000000;
+    margin-top: 78vw;
+  }
+}
+
+.CelebrationText {
+  font-family: "Libre-Bold", sans-serif;
+  font-size: clamp(2.5vw, 2.5vw, 4vh);
+  text-align: center;
+  margin-bottom: -0.5vw;
+  margin-top: 0.5vw;
+
+  @media (max-width: 1000px) {
+    font-size: 8vw;
+  }
+}
+
+.CelebrationSubtext {
+  font-family: "Libre-Light", sans-serif;
+  font-size: clamp(1.25vw, 1.25vw, 4vh);
+  text-align: center;
+  margin-bottom: -0.5vw;
+  margin-top: 0.5vw;
+
+  @media (max-width: 1000px) {
+    font-size: 4vw;
+  }
+}
+
+#AgainButton {
+  margin-top: 1vw;
+
+  @media (max-width: 1000px) {
+    height: 15vw;
+    font-size: 8vw;
+  }
+}
+
+#CloseButton {
+  @media (max-width: 1000px) {
+    margin-top: 1vw;
+    height: 15vw;
+    font-size: 8vw;
+  }
+}

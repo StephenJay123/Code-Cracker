@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+
+    <meta charset="UTF-8" />
+
+    <title>Code Cracker</title>
+    <link rel="icon" type="image/x-icon" href="Images/Favicon.png">
+</head>
+<body>
+    <button id="Main" onclick="window.location='index.html'">
+        <img id="Home" class="Icon" src="Images/Home-Black.png" draggable="false">
+    </button>
+
+    <div id="Game">
+        <div class="Grid">
+            <div class="Line">
+                <p id="Indent1" class="Indent"></p>
+                <div id="B1L1" class="Box">
+                    <img id="I1L1" class="Image" src="Images/Transparency.png" draggable="false">
+                </div>
+                <div id="B2L1" class="Box">
+                    <img id="I2L1" class="Image" src="Images/Transparency.png" draggable="false">
+                </div>
+                <div id="B3L1" class="Box">
+                    <img id="I3L1" class="Image" src="Images/Transparency.png" draggable="false">
+                </div>
+                <div id="B4L1" class="Box">
+                    <img id="I4L1" class="Image" src="Images/Transparency.png" draggable="false">
+                </div>
+                <p id="Score1" class="Score"></p>
+            </div>
+
+            <div class="Line">
+                <p id="Indent2" class="Indent"></p>
+                <div id="B1L2" class="Box">
+                    <img id="I1L2" class="Image" src="Images/Transparency.png" draggable="false">
+                </div>
+                <div id="B2L2" class="Box">
+                    <img id="I2L2" class="Image" src="Images/Transparency.png" draggable="false">
+                </div>
+                <div id="B3L2" class="Box">
+                    <img id="I3L2" class="Image" src="Images/Transparency.png" draggable="false">
+                </div>
+                <div id="B4L2" class="Box">
+                    <img id="I4L2" class="Image" src="Images/Transparency.png" draggable="false">
+                </div>
+                <p id="Score2" class="Score"></p>
+            </div>
+
+            <div class="Line">            
+                <p id="Indent3" class="Indent"></p>
+                <div id="B1L3" class="Box">
+                    <img id="I1L3" class="Image" src="Images/Transparency.png">
+                </div>
+                <div id="B2L3" class="Box">
+                    <img id="I2L3" class="Image" src="Images/Transparency.png" draggable="false">
+                </div>
+                <div id="B3L3" class="Box">
+                    <img id="I3L3" class="Image" src="Images/Transparency.png" draggable="false">
+                </div>
+                <div id="B4L3" class="Box">
+                    <img id="I4L3" class="Image" src="Images/Transparency.png" draggable="false">
+                </div>
+                <p id="Score3" class="Score"></p>
+            </div>
+
+            <div class="Line">
+                <p id="Indent4" class="Indent"></p>
+                <div id="B1L4" class="Box">
+                    <img id="I1L4" class="Image" src="Images/Transparency.png" draggable="false">
+                </div>
+                <div id="B2L4" class="Box">
+                    <img id="I2L4" class="Image" src="Images/Transparency.png" draggable="false">
+                </div>
+                <div id="B3L4" class="Box">
+                    <img id="I3L4" class="Image" src="Images/Transparency.png" draggable="false">                
+                </div>
+                <div id="B4L4" class="Box">
+                    <img id="I4L4" class="Image" src="Images/Transparency.png" draggable="false">
+                </div>
+                <p id="Score4" class="Score"></p>
+            </div>
+
+            <div class="Line">
+                <p id="Indent5" class="Indent"></p>
+                <div id="B1L5" class="Box">
+                    <img id="I1L5" class="Image" src="Images/Transparency.png" draggable="false">
+                </div>
+                <div id="B2L5" class="Box">
+                    <img id="I2L5" class="Image" src="Images/Transparency.png" draggable="false">
+                </div>
+                <div id="B3L5" class="Box">
+                    <img id="I3L5" class="Image" src="Images/Transparency.png" draggable="false">
+                </div>
+                <div id="B4L5" class="Box">
+                    <img id="I4L5" class="Image" src="Images/Transparency.png" draggable="false">
+                </div>
+                <p id="Score5" class="Score"></p>
+            </div>
+
+            <div class="Line">
+                <p id="Indent6" class="Indent"></p>
+                <div id="B1L6" class="Box">
+                    <img id="I1L6" class="Image" src="Images/Transparency.png" draggable="false">
+                </div>
+                <div id="B2L6" class="Box">
+                    <img id="I2L6" class="Image" src="Images/Transparency.png" draggable="false">
+                </div>
+                <div id="B3L6" class="Box">
+                    <img id="I3L6" class="Image" src="Images/Transparency.png" draggable="false">
+                </div>
+                <div id="B4L6" class="Box">
+                    <img id="I4L6" class="Image" src="Images/Transparency.png" draggable="false">
+                </div>
+                <p id="Score6" class="Score"></p>
+            </div>
+        </div>
+
+        <div class="Objects">
+            <button id="Backspace" class="Object" onclick="Clicked(5)">
+                <img id="BackspaceImg" class="Images" src="Images/BackspaceIcon.png" draggable="false">
+            </button>
+            <button id="O1" class="Object" onclick="Clicked(1)">
+                <img id="I1" class="Images" src="Images/Transparency.png" draggable="false">
+            </button>
+            <button id="O2" class="Object" onclick="Clicked(2)">
+                <img id="I2" class="Images" src="Images/Transparency.png" draggable="false">
+            </button>
+            <button id="O3" class="Object" onclick="Clicked(3)">
+                <img id="I3" class="Images" src="Images/Transparency.png" draggable="false">
+            </button>
+            <button id="O4" class="Object" onclick="Clicked(4)">
+                <img id="I4" class="Images" src="Images/Transparency.png" draggable="false">
+            </button>
+            <button id="Enter" class="Object" onclick="Clicked(6)">
+                <img id="EnterImg" class="Images" src="Images/EnterIcon.png" draggable="false">
+            </button>
+        </div>
+    </div>
+
+    <div id="BlurContainer">
+        
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
