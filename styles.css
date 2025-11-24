@@ -50,6 +50,7 @@ body {
   font-size: 4vh;
   border: none;
   border-radius: 5vh;
+  touch-action: manipulation;
 }
 
 .Play:hover {
@@ -174,6 +175,7 @@ body {
   box-sizing: border-box;
   background-color: transparent;
   outline: none;
+  touch-action: manipulation;
 }
 
 .Object:hover{
