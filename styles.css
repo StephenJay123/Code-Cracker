@@ -51,6 +51,8 @@ body {
   border: none;
   border-radius: 5vh;
   touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
 }
 
 .Play:hover {
@@ -58,8 +60,6 @@ body {
 }
 
 .Play:focus, button:active {
-  -webkit-tap-highlight-color: transparent;
-  -webkit-touch-callout: none;
   outline: none;
 }
 
@@ -181,7 +181,9 @@ body {
   box-sizing: border-box;
   background-color: transparent;
   outline: none;
-  touch-action: manipulation;
+  touch-action: manipulation;  
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
 }
 
 .Object:hover {
@@ -189,8 +191,6 @@ body {
 }
 
 .Object:focus, button:active {
-  -webkit-tap-highlight-color: transparent;
-  -webkit-touch-callout: none;
   outline: none;
 }
 
